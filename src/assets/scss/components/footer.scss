@@ -1,0 +1,55 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 297px;
+    background: $color-firefly;
+    padding: 55px 235px 105.87px 255px;
+    position: relative;
+
+    &__logo {
+        width: 129.64px;
+        height: 48.91px;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 20px 0 60.42px;
+        width: 529.42px;
+    }
+
+    &__title {
+        @include font(bold-12);
+        color: $color-robins-egg-blue;
+        margin-bottom: 13px;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        @include font(regular-14);
+        color: $color-white-opacity;
+    
+        span {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.company, .support, .follow {
+    display: flex;
+    flex-direction: column;
+}
+
+.leaf1 {
+    position: absolute;
+    left: 0;
+    top: -60px;
+}
+
+.leaf2 {
+    position: absolute;
+    right: 0;
+    top: 40px;
+}
