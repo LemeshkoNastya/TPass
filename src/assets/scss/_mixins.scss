@@ -29,4 +29,104 @@
             @content;
         }
     }
-  }
+}
+
+@mixin font($breakpoint) {
+    @if $breakpoint == regular-14 {
+        font-family: 'Roboto';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20.02px;
+        letter-spacing: 0.39px;
+    }
+    @if $breakpoint == regular-16 {
+        font-family: 'Roboto';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    @if $breakpoint == regular-18 {
+        font-family: 'Roboto';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+    }
+
+    @if $breakpoint == medium-16 {
+        font-family: 'Roboto';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+    }
+    @if $breakpoint == medium-18 {
+        font-family: 'Roboto';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 18px;
+    }
+
+    @if $breakpoint == bold-12 {
+        font-family: 'Roboto';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20.04px;
+        letter-spacing: 0.1px;
+    }
+    @if $breakpoint == bold-14 {
+        font-family: 'Roboto';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 16.8px;
+    }
+    @if $breakpoint == bold-18 {
+        font-family: 'Roboto';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 21.6px;
+    }
+    @if $breakpoint == bold-18 {
+        font-family: 'Roboto';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 21.6px;
+    }
+    @if $breakpoint == bold-25 {
+        font-family: 'Roboto';
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 25px;
+    }
+    @if $breakpoint == bold-55 {
+        font-family: 'Roboto';
+        font-size: 55px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 75.9px;
+        letter-spacing: 1.11px;
+    }
+
+    @if $breakpoint == black-40 {
+        font-family: 'Roboto';
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 55.2px;
+    }
+    @if $breakpoint == black-50 {
+        font-family: 'Roboto';
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 60px;
+    }
+}
