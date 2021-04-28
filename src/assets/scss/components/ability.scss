@@ -1,0 +1,60 @@
+.ability {
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 112px 150px 55px;
+    height: 720px;
+
+    &__content {
+        display: flex;
+        padding-left: 140px;
+        justify-content: space-between;
+        width: 1140px;
+        height: 540px;
+        background: $color-porcelain-2;
+        border-radius: 50px;
+    }
+
+    &__info {
+        margin-top: 117.03px;
+        display: flex;
+        flex-direction: column;
+        width: 420px;
+    
+        span:first-child {
+            @include font(regular-18);
+            color: $color-blue-bayoux;
+            margin-bottom: 22px;
+        }
+    
+        span:nth-child(2), span:nth-child(3) {
+            @include font(black-40);
+            color: $color-firefly;
+        }
+    
+        span:nth-child(4) {
+            @include font(regular-16);
+            color: $color-blue-bayoux;
+            margin-top: 21px;
+        }
+    }
+}
+
+.blueberry {
+    position: absolute;
+    width: 163px;
+    height: 115px;
+    margin: 480px 0 0 460px;
+}
+.mobile2 {
+    position: absolute;
+    width: 321px;
+    height: 640px;
+    top: 70px;
+    left: 850px;
+}
+.drink2 {
+    width: 178px;
+    height: 384px;
+    margin-top: 113.94px;
+}
