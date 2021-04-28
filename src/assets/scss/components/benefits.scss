@@ -1,0 +1,29 @@
+.benefits {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 100px 191px 40px 170px;
+    height: 409px;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        width: 325px;
+    }
+
+    &__icons {
+        margin-bottom: 29px;
+    }
+
+    &__title {
+        @include font(bold-25);
+        line-height: 32.5px;
+        margin-bottom: 12px;
+    }
+
+    &__subtitle {
+        @include font(regular-16);
+        width: 296px;
+    }
+}
