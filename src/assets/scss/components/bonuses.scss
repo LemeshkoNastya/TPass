@@ -1,0 +1,58 @@
+.bonuses {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 526px;
+    background: $color-porcelain-2;
+    margin-top: 50px;
+
+    &__list {
+        display: flex;
+        position: absolute;
+        top: -41px;
+        flex-direction: column;
+        left: 170px;
+        align-content: space-between;
+    }
+
+    &__item {
+        display: flex;
+        width: 455px;
+        height: 179px;
+        box-shadow: 0px 8px 32px $color-dark;
+        border-radius: 8px;
+        padding: 25px 0 0 25px;
+        margin-bottom: 30px;
+        background: $color-white;
+    
+        &:nth-child(2) {
+            margin-left: 40px;
+        }
+    }
+
+    &__icon {
+        margin-right: 23px;
+    }
+
+    &__text{
+        padding-top: 13px;
+    }
+
+    &__title {
+        @include font(bold-25);
+        color: $color-firefly;
+        margin-bottom: 25px;
+    }
+
+    &__subtitle {
+        @include font(regular-16);
+        color: $color-blue-bayoux;
+        width: 326px;
+    }
+
+    &__image {
+        position: absolute;
+        right: 170px;
+        top: -100px;
+    }
+}

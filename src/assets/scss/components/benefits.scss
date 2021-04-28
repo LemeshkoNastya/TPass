@@ -20,10 +20,12 @@
         @include font(bold-25);
         line-height: 32.5px;
         margin-bottom: 12px;
+        color: $color-firefly;
     }
 
     &__subtitle {
         @include font(regular-16);
         width: 296px;
+        color: $color-blue-bayoux;
     }
 }
