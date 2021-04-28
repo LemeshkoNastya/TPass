@@ -1,0 +1,78 @@
+.section {
+    display: flex;
+    width: 100%;
+    padding: 0px 115px;
+}
+
+.main {
+    background-color: $color-porcelain;
+    height: calc(100vh - 110px);
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        margin: 100px 0 50px;
+        @include font(bold-55);
+        width: 557px;
+        color: $color-firefly;
+    }
+
+    &__first__phrase {
+        color: $color-robins-egg-blue;
+    }
+
+    &__point {
+        color: $color-casablanca;
+    }
+
+    &__arrow {
+        margin-left: 15px;
+    }
+
+    &__button {
+        width: 208px;
+        height: 60px;
+        @include font(bold-18);
+        background: $color-robins-egg-blue;
+        border: 1px solid $color-robins-egg-blue;
+        box-shadow: 0px 3px 18px $color-robins-egg-blue-dark;
+        border-radius: 14px;
+
+        span {
+            display: flex;
+            align-items: center;
+            padding-left: 21px;
+        }
+
+        &:hover {
+            border: 1px solid $color-firefly;
+            background: $color-firefly;
+            color: $color-white;
+        }
+    }
+
+    &__image {
+        display: flex;
+    }
+
+    &__image__background {
+        position: absolute;
+        bottom: 0;
+        right: 85px;
+        
+        img {
+            width: 100%;
+        }
+    }
+
+    &__image__people {
+        position: absolute;
+        bottom: 0;
+        right: 251px;
+    }
+}
