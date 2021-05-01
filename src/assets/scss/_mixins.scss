@@ -1,5 +1,20 @@
 @mixin resolution($breakpoint) {
+    @if $breakpoint == enormous {
+        @media (min-width: 3200px) {
+          @content;
+        }
+    }
+    @if $breakpoint == very-big-desktop {
+        @media (min-width: 2000px) {
+          @content;
+        }
+    }
     @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 1401px) {
+          @content;
+        }
+    }
+    @if $breakpoint == pretty-big-desktop {
         @media only screen and (min-width: 1201px) {
           @content;
         }

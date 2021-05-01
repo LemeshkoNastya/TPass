@@ -5,15 +5,39 @@
     background-color: $color-porcelain;
     padding: 30px 115px;
 
+    @include resolution(big-desktop) {
+        padding: 28px 170px;
+    }
+
     &__menu {
-        width: 410px;
+        width: 408px;
         margin-left: auto;
+
+        @include resolution(small-desktop) {
+            width: 300px;
+        }
+
+        @include resolution(big-desktop) {
+            margin-right: 5px;
+        }
+
+        @include resolution(enormous) {
+            width: 800px;
+        }
     }
 }
 
 .logo {
     img {
         width: 100%;
+    }
+
+    @include resolution(enormous) {
+        width: 160%;
+    }
+
+    @include resolution(big-desktop) {
+        padding-top: 2px;
     }
 }
 
@@ -27,6 +51,10 @@
         list-style-type: none;
         height: 50px;
         width: 157px;
+
+        @include resolution(enormous) {
+            width: 300px;
+        }
         
         &:first-child {
             width: 97px;
@@ -46,6 +74,10 @@
         color: $color-firefly;
         border-radius: 8px;
         width: 100%;
+
+        @include resolution(enormous) {
+            font-size: 30px;
+        }
     
         &:hover {
             border: 1px solid $color-firefly;

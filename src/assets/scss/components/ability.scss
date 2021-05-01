@@ -2,7 +2,7 @@
     display: flex;
     position: relative;
     width: 100%;
-    padding: 112px 150px 55px;
+    padding: 182px 150px 55px;
     height: 720px;
 
     &__content {
@@ -16,10 +16,14 @@
     }
 
     &__info {
-        margin-top: 117.03px;
+        margin-top: 126.03px;
         display: flex;
         flex-direction: column;
         width: 420px;
+
+        @include resolution(big-desktop) {
+            width: 410px;
+        }
     
         span:first-child {
             @include font(regular-18);
@@ -35,7 +39,7 @@
         span:nth-child(4) {
             @include font(regular-16);
             color: $color-blue-bayoux;
-            margin-top: 21px;
+            margin: 21px 0 -21px;
         }
     }
 }
@@ -44,14 +48,14 @@
     position: absolute;
     width: 163px;
     height: 115px;
-    margin: 480px 0 0 460px;
+    margin: 475px 0 0 454px;
 }
 .mobile2 {
     position: absolute;
     width: 321px;
     height: 640px;
-    top: 70px;
-    left: 850px;
+    top: 132px;
+    left: 845px;
 }
 .drink2 {
     width: 178px;

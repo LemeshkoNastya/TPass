@@ -6,6 +6,10 @@
     background: $color-porcelain-2;
     margin-top: 50px;
 
+    @include resolution(big-desktop) {
+        margin-top: 40px;
+    }
+
     &__list {
         display: flex;
         position: absolute;

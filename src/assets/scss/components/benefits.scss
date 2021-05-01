@@ -6,14 +6,29 @@
     padding: 100px 191px 40px 170px;
     height: 409px;
 
+    @include resolution(big-desktop) {
+        // padding: 100px 191px 40px 170px;
+        padding-top: 62px;
+    }
+
     &__item {
         display: flex;
         flex-direction: column;
         width: 325px;
+
+        @include resolution(big-desktop) {
+            &:nth-child(3) {
+                padding-top: 20px;
+            }
+        }
     }
 
     &__icons {
         margin-bottom: 29px;
+
+        @include resolution(big-desktop) {
+            margin-bottom: 23px;
+        }
     }
 
     &__title {
