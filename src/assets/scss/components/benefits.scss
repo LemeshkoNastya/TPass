@@ -7,8 +7,13 @@
     height: 409px;
 
     @include resolution(big-desktop) {
-        // padding: 100px 191px 40px 170px;
         padding-top: 62px;
+    }
+
+    @include resolution(tablet) {
+        flex-direction: column;
+        margin-bottom: 450px;
+        margin-left: 10%;
     }
 
     &__item {
@@ -21,6 +26,10 @@
                 padding-top: 20px;
             }
         }
+
+        @include resolution(desktop) {
+            margin-right: 20px;
+        }
     }
 
     &__icons {
@@ -29,6 +38,10 @@
         @include resolution(big-desktop) {
             margin-bottom: 23px;
         }
+
+        @include resolution(tablet) {
+            margin-left: 100px;
+        }
     }
 
     &__title {
@@ -36,11 +49,38 @@
         line-height: 32.5px;
         margin-bottom: 12px;
         color: $color-firefly;
+
+        @include resolution(pretty-big-desktop) {
+            font-size: 20px;
+        }
+
+        @include resolution(desktop) {
+            font-size: 20px;
+        }
+
+        @include resolution(tablet) {
+            text-align: center;
+        }
     }
 
     &__subtitle {
         @include font(regular-16);
         width: 296px;
         color: $color-blue-bayoux;
+
+        @include resolution(pretty-big-desktop) {
+            font-size: 14px;
+            width: 250px;
+        }
+
+        @include resolution(desktop) {
+            font-size: 14px;
+            width: 250px;
+        }
+
+        @include resolution(tablet) {
+            margin-left: 40px;
+            text-align: center;
+        }
     }
 }
