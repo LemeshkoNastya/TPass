@@ -1,9 +1,13 @@
 .main {
     display: flex;
     width: 100%;
-    padding: 0px 115px;
+    padding: 0px 170px;
     background-color: $color-porcelain;
     height: calc(100vh - 110px);
+
+    @include resolution(small-desktop) {
+        padding: 0px 20px;
+    }
 
     &__content {
         display: flex;
@@ -13,22 +17,13 @@
     &__text {
         display: flex;
         flex-direction: column;
-        margin: 100px 0 50px;
+        margin: 90px 0 50px;
         @include font(bold-55);
         width: 557px;
         color: $color-firefly;
 
-        @include resolution(desktop) {
+        @include resolution(small-desktop) {
             font-size: 45px;
-        }
-
-        @include resolution(big-desktop) {
-            margin: 91px 55px 50px;
-        }
-
-        @include resolution(very-big-desktop) {
-            font-size: 75px;
-            width: 900px;
         }
 
         @include resolution(enormous) {
@@ -38,18 +33,23 @@
             margin-top: 200px;
         }
 
-        @include resolution(small-desktop) {
-            font-size: 35px;
+        @include resolution(very-big-desktop) {
+            font-size: 75px;
+            width: 900px;
+        }
+
+        @include resolution(very-big-desktop) {
+            font-size: 55px;
         }
 
         @include resolution(tablet) {
-            margin-top: 50px;
-            font-size: 30px;
-            line-height: 50px;
+            width: 600px;
+            font-size: 45px;
         }
 
         @include resolution(big-mobile) {
             text-align: center;
+            width: 400px;
         }
     }
 
@@ -74,10 +74,6 @@
         box-shadow: 0px 3px 18px $color-robins-egg-blue-dark;
         border-radius: 14px;
 
-        @include resolution(big-desktop) {
-            margin-left: 54px;
-        }
-
         @include resolution(enormous) {
             margin-top: 100px;
             width: 400px;
@@ -86,8 +82,8 @@
             margin-top: 200px;
         }
 
-        @include resolution(small-desktop) {
-            height: 50px;
+        @include resolution(big-mobile) {
+            margin-left: 100px;
         }
 
         span {
@@ -114,36 +110,18 @@
     &__image__background {
         position: absolute;
         bottom: 0;
-        right: 3%;
+        right: 6%;
         width: 57%;
         height: 100%;
 
-        @include resolution(desktop) {
-            right: 0;
-            height: 90%;
-        }
-
         @include resolution(pretty-big-desktop) {
-            right: 3%;
-        }
-
-        @include resolution(big-desktop) {
-            right: 6%;
-        }
-
-        @include resolution(very-big-desktop) {
-            width: 60%;
-            height: 110%;
-        }
-
-        @include resolution(small-desktop) {
+            right: 1%;
             width: 50%;
             height: 80%;
         }
 
-        @include resolution(tablet) {
-            width: 50%;
-            height: 60%;
+        @include resolution(big-mobile) {
+            right: 30%;
         }
     }
 
@@ -154,38 +132,14 @@
         width: 38%;
         height: 74.5%;
 
-        @include resolution(desktop) {
-            right: 10%;
-            height: 70%;
-        }
-
         @include resolution(pretty-big-desktop) {
             right: 14%;
+            width: 30%;
+            height: 60%;
         }
 
-        @include resolution(big-desktop) {
-            width: 40%;
-            height: 85%;
-        }
-
-        @include resolution(very-big-desktop) {
-            width: 40%;
-            height: 90%;
-        }
-
-        @include resolution(enormous) {
-            width: 40%;
-            height: 80%;
-        }
-
-        @include resolution(small-desktop) {
-            width: 35%;
-            height: 55%;
-        }
-
-        @include resolution(tablet) {
-            width: 35%;
-            height: 45%;
+        @include resolution(big-mobile) {
+            right: 40%;
         }
     }
 }
