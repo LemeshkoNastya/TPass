@@ -5,15 +5,33 @@
     padding: 50px 150px 170px;
     height: 820px;
 
+    @include resolution(small-desktop) {
+        height: 1200px;
+    }
+
+    @include resolution(tablet) {
+        padding: 50px 0 170px;
+    }
+
     &__content {
         display: flex;
         margin-top: 50px;
-        // padding-right: 160px;
         justify-content: space-between;
         width: 1140px;
         height: 540px;
         background: $color-porcelain-2;
         border-radius: 50px;
+
+        @include resolution(small-desktop) {
+            flex-direction: column;
+            height: 1000px;
+        }
+
+        @include resolution(tablet) {
+            height: 850px;
+            width: 468px;
+            margin-left: 15%;
+        }
     }
 
     &__info {
@@ -35,9 +53,9 @@
         }
 
         @include resolution(small-desktop) {
-            margin-right: 1%;
-            margin-top: 70px;
-            width: 250px;
+            margin-top: 0;
+            margin-bottom: 50px;
+            margin-left: 21%;
         }
     
         span:first-child {
@@ -69,6 +87,16 @@
         height: 250px;
         margin: 200px 0 0 10px;
     }
+
+    @include resolution(small-desktop) {
+        margin: 145px 0 0 10px;
+    }
+
+    @include resolution(tablet) {
+        width: 100px;
+        height: 200px;
+        margin: 115px 0 0 61px;
+    }
 }
 
 .mobile1 {
@@ -84,6 +112,21 @@
         width: 270px;
         height: 550px;
     }
+
+    @include resolution(small-desktop) {
+        top: 45px;
+    }
+
+    @include resolution(tablet) {
+        top: 58px;
+        left: 225px;
+        width: 200px;
+        height: 400px;
+    }
+
+    @media (max-width: 550px) {
+        left: 200px;
+    }
 }
 
 .crisps {
@@ -98,6 +141,22 @@
         left: 490px;
         width: 160px;
         height: 90px;
+    }
+
+    @include resolution(small-desktop) {
+        top: 555px;
+        left: 490px;
+        width: 100px;
+        height: 50px;
+    }
+
+    @include resolution(tablet) {
+        top: 415px;
+        left: 400px;
+    }
+
+    @media (max-width: 550px) {
+        left: 380px;
     }
 }
 
