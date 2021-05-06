@@ -10,7 +10,7 @@
         padding-top: 62px;
     }
 
-    @include resolution(tablet) {
+    @include resolution(small-desktop) {
         flex-direction: column;
         margin-bottom: 450px;
         margin-left: 10%;
@@ -39,7 +39,7 @@
             margin-bottom: 23px;
         }
 
-        @include resolution(tablet) {
+        @include resolution(small-desktop) {
             margin-left: 100px;
         }
     }
@@ -58,7 +58,7 @@
             font-size: 20px;
         }
 
-        @include resolution(tablet) {
+        @include resolution(small-desktop) {
             text-align: center;
         }
     }
@@ -78,7 +78,7 @@
             width: 250px;
         }
 
-        @include resolution(tablet) {
+        @include resolution(small-desktop) {
             margin-left: 40px;
             text-align: center;
         }
