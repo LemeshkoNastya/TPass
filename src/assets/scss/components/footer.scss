@@ -7,9 +7,26 @@
     padding: 55px 235px 105.87px 255px;
     position: relative;
 
+    @include resolution(desktop) {
+        padding: 55px 120px 105.87px 198px;
+    }
+
+    @include resolution(tablet) {
+        padding: 55px 78px 105.87px 80px;
+    }
+
+    @include resolution(big-mobile) {
+        padding: 25px 78px 105.87px 182px;
+    }
+
     &__logo {
         width: 129.64px;
         height: 48.91px;
+
+        @include resolution(tablet) {
+            width: 106.64px;
+            height: 38.91px;
+        }
     }
 
     &__info {
@@ -17,6 +34,22 @@
         justify-content: space-between;
         padding: 30px 20px 0 60.42px;
         width: 529.42px;
+
+        @include resolution(desktop) {
+            padding: 22px 0px 0 110px;
+        }
+
+        @include resolution(tablet) {
+            padding: 22px 0px 0 50px;
+        }
+
+        @include resolution(big-mobile) {
+            position: absolute;
+            left: -50px;
+            top: 70px;
+            flex-direction: column;
+            text-align: center;
+        }
     }
 
     &__title {
@@ -34,6 +67,10 @@
         span {
             margin-bottom: 5px;
         }
+
+        @include resolution(tablet) {
+            font-size: 12px;
+        }
     }
 }
 
@@ -46,10 +83,20 @@
     position: absolute;
     left: 0;
     top: -60px;
+
+    @include resolution(small-desktop) {
+        width: 14%;
+        height: 75%;
+    }
 }
 
 .leaf2 {
     position: absolute;
     right: 0;
-    top: 44px;
+    bottom: 0;
+
+    @include resolution(small-desktop) {
+        width: 11%;
+        height: 53%;
+    }
 }
