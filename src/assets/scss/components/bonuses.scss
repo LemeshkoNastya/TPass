@@ -10,6 +10,14 @@
         margin-top: 40px;
     }
 
+    @include resolution(pretty-big-desktop) {
+        height: 1300px;
+    }
+
+    @media (max-width: 600px) {
+        height: 942px;
+    }
+
     &__list {
         display: flex;
         position: absolute;
@@ -17,6 +25,18 @@
         flex-direction: column;
         left: 170px;
         align-content: space-between;
+
+        @include resolution(pretty-big-desktop) {
+            left: 350px;
+        }
+
+        @include resolution(small-desktop) {
+            left: 24%;
+        }
+
+        @include resolution(tablet) {
+            left: 15%;
+        }
     }
 
     &__item {
@@ -31,6 +51,16 @@
     
         &:nth-child(2) {
             margin-left: 40px;
+
+            @include resolution(pretty-big-desktop) {
+                margin-left: 0;
+            }
+        }
+
+        @media (max-width: 600px) {
+            width: 350px;
+            height: 150px;
+            padding: 10px 0 0 5px;
         }
     }
 
@@ -46,17 +76,41 @@
         @include font(bold-25);
         color: $color-firefly;
         margin-bottom: 25px;
+
+        @media (max-width: 600px) {
+            margin-bottom: 10px;
+        }
     }
 
     &__subtitle {
         @include font(regular-16);
         color: $color-blue-bayoux;
         width: 326px;
+
+        @media (max-width: 600px) {
+            width: 250px;
+        }
     }
 
     &__image {
         position: absolute;
         right: 170px;
         top: -100px;
+
+        @include resolution(pretty-big-desktop) {
+            left: 280px;
+            top: 672px;
+        }
+
+        @include resolution(small-desktop) {
+            left: 16%;
+        }
+
+        @media (max-width: 600px) {
+            width: 70%;
+            height: 43%;
+            left: 10%;
+            top: 534px;
+        }
     }
 }
