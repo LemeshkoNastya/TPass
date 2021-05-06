@@ -5,6 +5,22 @@
     padding: 182px 150px 55px;
     height: 720px;
 
+    @include resolution(pretty-big-desktop) {
+        padding: 182px 100px 55px;
+    }
+
+    @include resolution(desktop) {
+        margin-bottom: 590px;
+    }
+
+    @include resolution(small-desktop) {
+        padding: 182px 50px 55px;
+    }
+
+    @include resolution(tablet) {
+        padding: 182px 20px 55px;
+    }
+
     &__content {
         display: flex;
         padding-left: 140px;
@@ -13,16 +29,45 @@
         height: 540px;
         background: $color-porcelain-2;
         border-radius: 50px;
+
+        @include resolution(pretty-big-desktop) {
+            padding-left: 100px;
+        }
+
+        @include resolution(desktop) {
+            height: 1200px;
+            width: 900px;
+        }
+
+        @include resolution(small-desktop) {
+            width: 860px;
+        }
+
+        @include resolution(tablet) {
+            padding-left: 50px;
+            width: 700px;
+            height: 1100px;
+        }
     }
 
     &__info {
         margin-top: 126.03px;
         display: flex;
         flex-direction: column;
-        width: 420px;
+        width: 410px;
 
-        @include resolution(big-desktop) {
-            width: 410px;
+        @include resolution(pretty-big-desktop) {
+            width: 350px;
+        }
+
+        @include resolution(desktop) {
+            margin-left: 100px;
+            margin-top: 50px;
+        }
+
+        @include resolution(tablet) {
+            margin-left: 40px;
+            position: absolute;
         }
     
         span:first-child {
@@ -34,6 +79,10 @@
         span:nth-child(2), span:nth-child(3) {
             @include font(black-40);
             color: $color-firefly;
+
+            @include resolution(small-desktop) {
+                font-size: 30px;
+            }
         }
     
         span:nth-child(4) {
@@ -49,6 +98,22 @@
     width: 163px;
     height: 115px;
     margin: 475px 0 0 454px;
+
+    @include resolution(pretty-big-desktop) {
+        margin: 475px 0 0 378px;
+    }
+
+    @include resolution(desktop) {
+        margin: 1017px 0 0 0;
+    }
+
+    @include resolution(tablet) {
+        margin: 900px 0 0 286px;
+    }
+
+    @media (max-width: 550px) {
+        margin: 900px 0 0 260px;
+    }
 }
 .mobile2 {
     position: absolute;
@@ -56,9 +121,40 @@
     height: 640px;
     top: 132px;
     left: 845px;
+
+    @include resolution(pretty-big-desktop) {
+        left: 677px;
+    }
+
+    @include resolution(desktop) {
+        top: 658px;
+        left: 27%;
+    }
+
+    @include resolution(tablet) {
+        width: 268px;
+        height: 521px;
+    }
+
+    @media (max-width: 550px) {
+        left: 25%;
+    }
 }
 .drink2 {
     width: 178px;
     height: 384px;
     margin-top: 113.94px;
+
+    @include resolution(pretty-big-desktop) {
+        margin-right: 127px;
+    }
+
+    @media (max-width: 1300px) {
+        margin-right: 20px;
+    }
+
+    @include resolution(desktop) {
+        margin-right: 240px;
+        margin-top: 638px;
+    }
 }
