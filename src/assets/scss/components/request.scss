@@ -4,6 +4,10 @@
     align-items: center;
     padding: 151px 435px 113px;
 
+    @include resolution(tablet) {
+        padding: 151px 0 113px;
+    }
+
     &__icon {
         margin-bottom: 23px;
     }
@@ -13,6 +17,11 @@
         width: 520px;
         @include font(black-50);
         margin-bottom: 20.13px;
+
+        @include resolution(tablet) {
+            font-size: 40px;
+            width: 430px;
+        }
     }
 
     &__input {
@@ -21,6 +30,10 @@
         width: 570px;
         height: 55px;
         margin-bottom: 20px;
+
+        @include resolution(tablet) {
+            width: 450px;
+        }
     }
 
     &__search {
@@ -33,6 +46,11 @@
         border-radius: 6px;
         @include font(bold-18);
         color: $color-black-light;
+
+        @include resolution(tablet) {
+            width: 330px;
+            padding: 17px 20px 16px 20px;
+        }
     }
 
     &__button {
@@ -43,6 +61,10 @@
         border-radius: 14px;
         @include font(bold-18);
         color: $color-firefly;
+
+        @include resolution(tablet) {
+            width: 110px;
+        }
     }
 
     &__download {
@@ -58,5 +80,8 @@
             margin-right: 24px;
         }
         
+        @include resolution(tablet) {
+            margin-left: -30px;
+        }
     }
 }
