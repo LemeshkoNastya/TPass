@@ -13,7 +13,6 @@
     @include resolution(small-desktop) {
         flex-direction: column;
         margin-bottom: 450px;
-        margin-left: 10%;
     }
 
     &__item {

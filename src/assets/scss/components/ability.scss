@@ -48,6 +48,12 @@
             width: 700px;
             height: 1100px;
         }
+
+        @include resolution(big-mobile) {
+            padding-left: 30px;
+            width: 700px;
+            height: 1100px;
+        }
     }
 
     &__info {
@@ -65,11 +71,11 @@
             margin-top: 50px;
         }
 
-        @include resolution(tablet) {
+        @include resolution(small-desktop) {
             margin-left: 40px;
             position: absolute;
         }
-    
+        
         span:first-child {
             @include font(regular-18);
             color: $color-blue-bayoux;

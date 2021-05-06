@@ -4,8 +4,8 @@
     align-items: center;
     padding: 151px 435px 113px;
 
-    @include resolution(tablet) {
-        padding: 151px 0 113px;
+    @include resolution(small-desktop) {
+        padding: 151px 50px 113px;
     }
 
     &__icon {

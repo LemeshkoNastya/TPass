@@ -5,6 +5,10 @@
     background-color: $color-porcelain;
     height: calc(100vh - 110px);
 
+    @media (max-width: 1080px) {
+        padding: 0px 70px;
+    }
+
     @include resolution(small-desktop) {
         padding: 0px 20px;
     }
@@ -22,10 +26,6 @@
         width: 557px;
         color: $color-firefly;
 
-        @include resolution(small-desktop) {
-            font-size: 45px;
-        }
-
         @include resolution(enormous) {
             font-size: 150px;
             width: 1500px;
@@ -34,17 +34,20 @@
         }
 
         @include resolution(very-big-desktop) {
-            font-size: 75px;
+            font-size: 55px;
             width: 900px;
         }
 
-        @include resolution(very-big-desktop) {
-            font-size: 55px;
+        @include resolution(small-desktop) {
+            font-size: 45px;
+            width: 700px;
         }
 
         @include resolution(tablet) {
-            width: 600px;
-            font-size: 45px;
+            width: 400px;
+            font-size: 35px;
+            line-height: 50px;
+            margin: 50px 0 50px;
         }
 
         @include resolution(big-mobile) {
@@ -120,6 +123,11 @@
             height: 80%;
         }
 
+        @include resolution(tablet) {
+            width: 50%;
+            height: 60%;
+        }
+
         @include resolution(big-mobile) {
             right: 30%;
         }
@@ -136,6 +144,11 @@
             right: 14%;
             width: 30%;
             height: 60%;
+        }
+
+        @include resolution(tablet) {
+            width: 30%;
+            height: 40%;
         }
 
         @include resolution(big-mobile) {
