@@ -9,35 +9,36 @@
         padding: 28px 170px;
     }
 
+    @include resolution(small-desktop) {
+        padding: 30px 20px;
+    }
+
     &__menu {
         width: 408px;
         margin-left: auto;
 
-        @include resolution(small-desktop) {
-            width: 300px;
+        @include resolution(enormous) {
+            width: 800px;
         }
 
         @include resolution(big-desktop) {
             margin-right: 5px;
         }
 
-        @include resolution(enormous) {
-            width: 800px;
+        @include resolution(small-desktop) {
+            width: 300px;
         }
     }
 }
 
 .logo {
+    padding-top: 2px;
     img {
         width: 100%;
     }
 
     @include resolution(enormous) {
         width: 160%;
-    }
-
-    @include resolution(big-desktop) {
-        padding-top: 2px;
     }
 }
 
@@ -78,11 +79,39 @@
         @include resolution(enormous) {
             font-size: 30px;
         }
-    
+
+        @include resolution(small-desktop) {
+            margin-top: 10px;
+        }
+
+        @include resolution(tablet) {
+            margin-top: 20px;
+        }
+
+        @include resolution(big-mobile) {
+            display: none;
+        }
+
         &:hover {
             border: 1px solid $color-firefly;
             background: $color-firefly;
             color: $color-white;
         }
+    }
+}
+
+.menu {
+    position: absolute;
+    display: none;
+
+    @include resolution(big-mobile) {
+        display: block;
+        right: 50px;
+        top: 45px;
+    }
+
+    @include resolution(mobile) {
+        width: 30px;
+        height: 25px;
     }
 }
