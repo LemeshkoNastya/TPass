@@ -20,6 +20,9 @@
         flex-direction: column;
         width: 325px;
 
+        animation: slideInUp;
+        animation-duration: 2s;
+
         @include resolution(big-desktop) {
             &:nth-child(3) {
                 padding-top: 20px;

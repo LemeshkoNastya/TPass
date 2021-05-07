@@ -128,6 +128,9 @@
     top: 132px;
     left: 845px;
 
+    animation: swing;
+    animation-duration: 3s;
+
     @include resolution(pretty-big-desktop) {
         left: 677px;
     }
