@@ -22,6 +22,7 @@
     &__logo {
         width: 129.64px;
         height: 48.91px;
+        cursor: pointer;
 
         @include resolution(tablet) {
             width: 106.64px;

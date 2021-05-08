@@ -5,4 +5,4 @@ import WOW from'wow.js';
 
 new WOW().init();
 
-// import './components/test';
+import './components/burger';

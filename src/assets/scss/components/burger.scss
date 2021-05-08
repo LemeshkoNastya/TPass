@@ -1,0 +1,82 @@
+.burger {
+    display: none;
+    position: absolute;
+
+    @include resolution(big-mobile) {
+        display: block;
+        right: 50px;
+        top: 45px;
+        transition: 1s;
+        cursor: pointer;
+    }
+
+    @include resolution(mobile) {
+        width: 30px;
+        height: 25px;
+    }
+
+    &__rotate {
+        position: fixed;
+        right: 25px;
+        transform: rotate(90deg);
+        z-index: 1;
+    }
+
+    &__menu {
+        padding: 50% 25%;
+
+        .list {
+            flex-direction: column;
+            height: 300px;
+
+            &__item {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+
+            &__link {
+                font-size: 24px;
+                display: block;
+                width: 100px;
+
+                &:hover {
+                    border: 1px solid $color-porcelain;
+                    background: $color-porcelain;
+                    color: $color-firefly;
+                }
+            }
+        }
+    } 
+}
+  
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -320px;
+    width: 320px;
+    height: 100%;
+    display: flex;
+    background: $color-porcelain;
+    opacity: 0;
+    transition: all 1s;
+
+    &__active {
+        right: 0px;
+        opacity: 1;
+    }
+}
+
+.scroll__not {
+    overflow: hidden;
+}
+
+.shadowed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background: $color-black-light;
+}

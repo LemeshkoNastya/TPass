@@ -99,19 +99,3 @@
         }
     }
 }
-
-.menu {
-    position: absolute;
-    display: none;
-
-    @include resolution(big-mobile) {
-        display: block;
-        right: 50px;
-        top: 45px;
-    }
-
-    @include resolution(mobile) {
-        width: 30px;
-        height: 25px;
-    }
-}

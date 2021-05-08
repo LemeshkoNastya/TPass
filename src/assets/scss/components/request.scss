@@ -46,6 +46,7 @@
         border-radius: 6px;
         @include font(bold-18);
         color: $color-black-light;
+        outline: none;
 
         @include resolution(tablet) {
             width: 330px;
@@ -61,6 +62,7 @@
         border-radius: 14px;
         @include font(bold-18);
         color: $color-firefly;
+        cursor: pointer;
 
         animation: pulse;
         animation-duration: 2s;
@@ -69,6 +71,12 @@
         @include resolution(tablet) {
             width: 110px;
         }
+
+        &:hover {
+            background: $color-firefly;
+            border: 1px solid $color-firefly;
+            color: $color-white;
+        }
     }
 
     &__download {
@@ -76,7 +84,7 @@
         margin-left: -150px;
         flex-direction: row;
         justify-content: space-between;
-        
+        cursor: pointer;
     
         img {
             width: 185px;
