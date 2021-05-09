@@ -2,9 +2,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    // height: 297px;
     background: $color-firefly;
-    // padding: 55px 235px 105.87px 255px;
     position: relative;
 
     @include resolution(enormous) {
@@ -36,8 +34,6 @@
     }
 
     &__logo {
-        // width: 129.64px;
-        // height: 48.91px;
         cursor: pointer;
 
         @include resolution(enormous) {
@@ -65,7 +61,6 @@
         display: flex;
         justify-content: space-between;
         padding: 30px 20px 0 60.42px;
-        // width: 529.42px;
 
         @include resolution(enormous) {
             width: 1000px;
@@ -99,7 +94,6 @@
     &__title {
         @include font(bold-12);
         color: $color-robins-egg-blue;
-        // margin-bottom: 13px;
 
         @include resolution(enormous) {
             font-size: 30px;
@@ -136,7 +130,6 @@
         }
     
         span {
-            // margin-bottom: 5px;
 
             @include resolution(enormous) {
                 margin-bottom: 20px;
@@ -165,7 +158,6 @@
 .leaf1 {
     position: absolute;
     left: 0;
-    // top: -60px;
 
     @include resolution(enormous) {
         width: 12%;

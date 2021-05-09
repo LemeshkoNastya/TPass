@@ -2,7 +2,6 @@
     display: flex;
     position: relative;
     width: 100%;
-    // padding: 50px 150px 170px;
     height: 820px;
 
     @include resolution(enormous) {
@@ -29,8 +28,6 @@
         display: flex;
         margin-top: 50px;
         justify-content: space-between;
-        // width: 1140px;
-        // height: 540px;
         background: $color-porcelain-2;
         border-radius: 50px;
 
@@ -66,11 +63,9 @@
     }
 
     &__info {
-        // margin-top: 117.03px;
         margin-right: 14.15%;
         display: flex;
         flex-direction: column;
-        // width: 419px;
 
         animation: fadeInBottomRight;
         animation-duration: 2s;
@@ -174,9 +169,6 @@
 }
 
 .drink1 {
-    // width: 187px;
-    // height: 361px;
-    // margin: 115px 0 0 30px;
 
     @include resolution(enormous) {
         width: 300px;
@@ -215,10 +207,6 @@
 
 .mobile1 {
     position: absolute;
-    // top: 50px;
-    // left: 305px;
-    // width: 321px;
-    // height: 640px;
 
     @include resolution(enormous) {
         top: 150px;
@@ -266,10 +254,6 @@
 
 .crisps {
     position: absolute;
-    // top: 579px;
-    // left: 539px;
-    // width: 223px;
-    // height: 117px;
 
     @include resolution(enormous) {
         top: 1150px;

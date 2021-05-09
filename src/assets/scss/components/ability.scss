@@ -2,7 +2,6 @@
     display: flex;
     position: relative;
     width: 100%;
-    // padding: 182px 150px 55px;
     height: 720px;
 
     @include resolution(enormous) {
@@ -37,8 +36,6 @@
         display: flex;
         padding-left: 140px;
         justify-content: space-between;
-        // width: 1140px;
-        // height: 540px;
         background: $color-porcelain-2;
         border-radius: 50px;
 
@@ -84,10 +81,8 @@
     }
 
     &__info {
-        // margin-top: 126.03px;
         display: flex;
         flex-direction: column;
-        // width: 410px;
 
         @include resolution(enormous) {
             width: 700px;
@@ -124,7 +119,6 @@
         span:first-child {
             @include font(regular-18);
             color: $color-blue-bayoux;
-            // margin-bottom: 22px;
 
             @include resolution(enormous) {
                 font-size: 30px;
@@ -169,7 +163,6 @@
         span:nth-child(4) {
             @include font(regular-16);
             color: $color-blue-bayoux;
-            // margin: 21px 0 -21px;
 
             @include resolution(enormous) {
                 font-size: 40px;
@@ -195,9 +188,6 @@
 
 .blueberry {
     position: absolute;
-    // width: 163px;
-    // height: 115px;
-    // margin: 475px 0 0 454px;
 
     @include resolution(enormous) {
         width: 300px;
@@ -235,11 +225,6 @@
 }
 .mobile2 {
     position: absolute;
-    // width: 321px;
-    // height: 640px;
-    // top: 132px;
-    // left: 845px;
-
     animation: swing;
     animation-duration: 3s;
 
@@ -283,9 +268,6 @@
     }
 }
 .drink2 {
-    // width: 178px;
-    // height: 384px;
-    // margin-top: 113.94px;
 
     @include resolution(enormous) {
         width: 300px;

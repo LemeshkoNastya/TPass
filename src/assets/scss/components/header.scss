@@ -10,7 +10,6 @@
     }
 
     &__menu {
-        // width: 408px;
         margin-left: auto;
 
         @include resolution(enormous) {
@@ -62,7 +61,6 @@
         display: flex;
         list-style-type: none;
         height: 50px;
-        // width: 157px;
 
         @include resolution(enormous) {
             width: 1000px;
@@ -106,14 +104,6 @@
         @include resolution(big-desktop) {
             font-size: 14px;
         }
-
-        // @include resolution(very-big-desktop) {
-        //     font-size: 30px;
-        // }
-
-        // @include resolution(big-desktop) {
-        //     font-size: 14px;
-        // }
 
         @include resolution(small-desktop) {
             margin-top: 10px;

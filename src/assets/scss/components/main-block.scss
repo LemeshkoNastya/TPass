@@ -113,7 +113,6 @@
         span {
             display: flex;
             align-items: center;
-            // padding-left: 21px;
 
             @include resolution(enormous) {
                 padding-left: 70px;

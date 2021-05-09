@@ -2,9 +2,7 @@
     position: relative;
     display: flex;
     width: 100%;
-    // height: 526px;
     background: $color-porcelain-2;
-    // margin-top: 50px;
 
     @include resolution(enormous) {
         margin-top: 1000px;
@@ -56,12 +54,8 @@
 
     &__item {
         display: flex;
-        // width: 455px;
-        // height: 179px;
         box-shadow: 0px 8px 32px $color-dark;
-        // border-radius: 8px;
         padding: 25px 0 0 25px;
-        // margin-bottom: 30px;
         background: $color-white;
 
         animation: slideInLeft;
@@ -89,7 +83,6 @@
         }
     
         &:nth-child(2) {
-            // margin-left: 40px;
 
             @include resolution(enormous) {
                 margin-left: 200px;
@@ -116,7 +109,6 @@
     }
 
     &__icon {
-        // margin-right: 23px;
 
         @include resolution(enormous) {
             margin-right: 100px;
@@ -144,7 +136,6 @@
     }
 
     &__text{
-        // padding-top: 13px;
 
         @include resolution(enormous) {
             padding-top: 20px;
@@ -163,7 +154,6 @@
     &__title {
         @include font(bold-25);
         color: $color-firefly;
-        // margin-bottom: 25px;
 
         @include resolution(enormous) {
             font-size: 50px;
@@ -188,7 +178,6 @@
     &__subtitle {
         @include font(regular-16);
         color: $color-blue-bayoux;
-        // width: 326px;
 
         @include resolution(enormous) {
             font-size: 30px;
@@ -214,8 +203,6 @@
 
     &__image {
         position: absolute;
-        // right: 170px;
-        // top: -100px;
 
         @include resolution(enormous) {
             right: 170px;

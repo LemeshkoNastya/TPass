@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // padding: 151px 435px 113px;
 
     @include resolution(enormous) {
         padding: 1000px 435px 400px;
@@ -21,7 +20,6 @@
     }
 
     &__icon {
-        // margin-bottom: 23px;
 
         @include resolution(enormous) {
             width: 200px;
@@ -41,9 +39,7 @@
 
     &__title {
         text-align: center;
-        // width: 520px;
         @include font(black-50);
-        // margin-bottom: 20.13px;
 
         @include resolution(enormous) {
             font-size: 80px;
@@ -74,8 +70,6 @@
     &__input {
         display: flex;
         justify-content: space-between;
-        // width: 570px;
-        // height: 55px;
         margin-bottom: 20px;
 
         @include resolution(enormous) {
@@ -103,8 +97,6 @@
     &__search {
         display: flex;
         padding: 17px 111px 16px 114px;
-        // width: 394px;
-        // height: 55px;
         background: $color-athens-gray;
         border: 1px solid $color-athens-gray;
         border-radius: 6px;
@@ -134,8 +126,6 @@
     }
 
     &__button {
-        // width: 156px;
-        // height: 55px;
         background: $color-robins-egg-blue;
         border: 1px solid $color-robins-egg-blue;
         border-radius: 14px;
@@ -175,7 +165,6 @@
 
     &__download {
         display: flex;
-        // margin-left: -150px;
         flex-direction: row;
         justify-content: space-between;
         cursor: pointer;
@@ -193,9 +182,6 @@
         }
     
         img {
-            // width: 185px;
-            // height: 60px;
-            // margin-right: 24px;
 
             @include resolution(enormous) {
                 width: 250px;
