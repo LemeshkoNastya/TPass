@@ -1,1 +1,5 @@
 node_modules
+.babelrc
+.eslintignore
+.eslintrc
+postcss.config.js
