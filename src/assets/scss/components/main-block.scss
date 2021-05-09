@@ -34,8 +34,16 @@
         }
 
         @include resolution(very-big-desktop) {
-            font-size: 55px;
+            font-size: 80px;
+            line-height: 100px;
             width: 900px;
+            margin-top: 150px;
+        }
+    
+        @include resolution(big-desktop) {
+            margin: 90px 0 50px;
+            @include font(bold-55);
+            width: 557px;
         }
 
         @include resolution(small-desktop) {
@@ -78,24 +86,45 @@
         border-radius: 14px;
 
         @include resolution(enormous) {
-            margin-top: 100px;
             width: 400px;
             height: 80px;
             font-size: 30px;
             margin-top: 200px;
         }
 
+        @include resolution(very-big-desktop) {
+            margin-top: 50px;
+            width: 400px;
+            height: 80px;
+            font-size: 25px;
+        }
+    
+        @include resolution(big-desktop) {
+            width: 208px;
+            height: 60px;
+            font-size: 18px;
+        }
+
         @include resolution(big-mobile) {
             margin-left: 100px;
+            margin-top: 0;
         }
 
         span {
             display: flex;
             align-items: center;
-            padding-left: 21px;
+            // padding-left: 21px;
 
             @include resolution(enormous) {
                 padding-left: 70px;
+            }
+
+            @include resolution(very-big-desktop) {
+                padding-left: 100px;
+            }
+        
+            @include resolution(big-desktop) {
+                padding-left: 21px;
             }
         }
 
@@ -119,17 +148,19 @@
 
         @include resolution(pretty-big-desktop) {
             right: 1%;
-            width: 50%;
-            height: 80%;
+            width: 500px;
+            height: 700px;
         }
 
         @include resolution(tablet) {
-            width: 50%;
-            height: 60%;
+            width: 400px;
+            height: 500px;
         }
 
         @include resolution(big-mobile) {
-            right: 30%;
+            right: 15%;
+            width: 350px;
+            height: 400px;
         }
     }
 
@@ -141,18 +172,20 @@
         height: 74.5%;
 
         @include resolution(pretty-big-desktop) {
-            right: 14%;
-            width: 30%;
-            height: 60%;
+            right: 10%;
+            width: 350px;
+            height: 500px;
         }
 
         @include resolution(tablet) {
-            width: 30%;
-            height: 40%;
+            width: 250px;
+            height: 350px;
         }
 
         @include resolution(big-mobile) {
-            right: 40%;
+            right: 30%;
+            width: 250px;
+            height: 300px;
         }
     }
 }

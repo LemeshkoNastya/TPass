@@ -3,26 +3,27 @@
     align-items: center;
     width: 100%;
     background-color: $color-porcelain;
-    padding: 30px 115px;
-
-    @include resolution(big-desktop) {
-        padding: 28px 170px;
-    }
+    padding: 28px 170px;
 
     @include resolution(small-desktop) {
         padding: 30px 20px;
     }
 
     &__menu {
-        width: 408px;
+        // width: 408px;
         margin-left: auto;
 
         @include resolution(enormous) {
             width: 800px;
         }
 
+        @include resolution(very-big-desktop) {
+            width: 800px;
+        }
+
         @include resolution(big-desktop) {
             margin-right: 5px;
+            width: 408px;
         }
 
         @include resolution(small-desktop) {
@@ -40,21 +41,39 @@
     @include resolution(enormous) {
         width: 160%;
     }
+
+    @include resolution(very-big-desktop) {
+        width: 130%;
+    }
+
+    @include resolution(big-desktop) {
+        width: auto;
+    }
 }
 
 .list {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    
     
     &__item {
         display: flex;
         list-style-type: none;
         height: 50px;
-        width: 157px;
+        // width: 157px;
 
         @include resolution(enormous) {
-            width: 300px;
+            width: 1000px;
+        }
+
+        @include resolution(very-big-desktop) {
+            width: 1000px;
+        }
+    
+        @include resolution(big-desktop) {
+            width: 157px;
         }
         
         &:first-child {
@@ -79,6 +98,22 @@
         @include resolution(enormous) {
             font-size: 30px;
         }
+
+        @include resolution(very-big-desktop) {
+            font-size: 20px;
+        }
+    
+        @include resolution(big-desktop) {
+            font-size: 14px;
+        }
+
+        // @include resolution(very-big-desktop) {
+        //     font-size: 30px;
+        // }
+
+        // @include resolution(big-desktop) {
+        //     font-size: 14px;
+        // }
 
         @include resolution(small-desktop) {
             margin-top: 10px;

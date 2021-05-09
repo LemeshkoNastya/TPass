@@ -2,10 +2,25 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 297px;
+    // height: 297px;
     background: $color-firefly;
-    padding: 55px 235px 105.87px 255px;
+    // padding: 55px 235px 105.87px 255px;
     position: relative;
+
+    @include resolution(enormous) {
+        height: 600px;
+        padding: 100px 600px 105.87px 400px;
+    }
+
+    @include resolution(very-big-desktop) {
+        height: 600px;
+        padding: 100px 500px 105.87px 400px;
+    }
+
+    @include resolution(big-desktop) {
+        height: 297px;
+        padding: 55px 235px 105.87px 255px;
+    }
 
     @include resolution(desktop) {
         padding: 55px 120px 105.87px 198px;
@@ -17,12 +32,28 @@
 
     @include resolution(big-mobile) {
         padding: 25px 78px 105.87px 182px;
+        height: 400px;
     }
 
     &__logo {
-        width: 129.64px;
-        height: 48.91px;
+        // width: 129.64px;
+        // height: 48.91px;
         cursor: pointer;
+
+        @include resolution(enormous) {
+            width: 300px;
+            height: 80px;
+        }
+
+        @include resolution(very-big-desktop) {
+            width: 200px;
+            height: 70px;
+        }
+    
+        @include resolution(big-desktop) {
+            width: 129.64px;
+            height: 48.91px;
+        }
 
         @include resolution(tablet) {
             width: 106.64px;
@@ -34,7 +65,19 @@
         display: flex;
         justify-content: space-between;
         padding: 30px 20px 0 60.42px;
-        width: 529.42px;
+        // width: 529.42px;
+
+        @include resolution(enormous) {
+            width: 1000px;
+        }
+
+        @include resolution(very-big-desktop) {
+            width: 800px;
+        }
+    
+        @include resolution(big-desktop) {
+            width: 529.42px;
+        }
 
         @include resolution(desktop) {
             padding: 22px 0px 0 110px;
@@ -56,7 +99,22 @@
     &__title {
         @include font(bold-12);
         color: $color-robins-egg-blue;
-        margin-bottom: 13px;
+        // margin-bottom: 13px;
+
+        @include resolution(enormous) {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        @include resolution(very-big-desktop) {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+    
+        @include resolution(big-desktop) {
+            font-size: 12px;
+            margin-bottom: 13px;
+        }
     }
 
     &__text {
@@ -64,9 +122,33 @@
         flex-direction: column;
         @include font(regular-14);
         color: $color-white-opacity;
+
+        @include resolution(enormous) {
+            font-size: 20px;
+        }
+
+        @include resolution(very-big-desktop) {
+            font-size: 18px;
+        }
+    
+        @include resolution(big-desktop) {
+            font-size: 14px;
+        }
     
         span {
-            margin-bottom: 5px;
+            // margin-bottom: 5px;
+
+            @include resolution(enormous) {
+                margin-bottom: 20px;
+            }
+
+            @include resolution(very-big-desktop) {
+                margin-bottom: 15px;
+            }
+        
+            @include resolution(big-desktop) {
+                margin-bottom: 5px;
+            }
         }
 
         @include resolution(tablet) {
@@ -83,11 +165,33 @@
 .leaf1 {
     position: absolute;
     left: 0;
-    top: -60px;
+    // top: -60px;
+
+    @include resolution(enormous) {
+        width: 12%;
+        height: 90%;
+        top: -150px;
+    }
+
+    @include resolution(very-big-desktop) {
+        width: 11%;
+        height: 80%;
+        top: -100px;
+    }
+
+    @include resolution(big-desktop) {
+        top: -60px;
+        width: 172px;
+        height: 336px;
+    }
 
     @include resolution(small-desktop) {
         width: 14%;
         height: 75%;
+    }
+
+    @include resolution(big-mobile) {
+        width: 20%;
     }
 }
 
@@ -96,8 +200,27 @@
     right: 0;
     bottom: 0;
 
+    @include resolution(enormous) {
+        width: 12%;
+        height: 80%;
+    }
+
+    @include resolution(very-big-desktop) {
+        width: 10%;
+        height: 70%;
+    }
+
+    @include resolution(big-desktop) {
+        width: 155px;
+        height: 253px;
+    }
+
     @include resolution(small-desktop) {
         width: 11%;
         height: 53%;
+    }
+
+    @include resolution(big-mobile) {
+        width: 20%;
     }
 }

@@ -2,9 +2,24 @@
     position: relative;
     display: flex;
     width: 100%;
-    height: 526px;
+    // height: 526px;
     background: $color-porcelain-2;
-    margin-top: 50px;
+    // margin-top: 50px;
+
+    @include resolution(enormous) {
+        margin-top: 1000px;
+        height: 1000px;
+    }
+
+    @include resolution(very-big-desktop) {
+        margin-top: 800px;
+        height: 800px;
+    }
+
+    @include resolution(big-desktop) {
+        margin-top: 50px;
+        height: 526px;
+    }
 
     @include resolution(big-desktop) {
         margin-top: 40px;
@@ -41,19 +56,52 @@
 
     &__item {
         display: flex;
-        width: 455px;
-        height: 179px;
+        // width: 455px;
+        // height: 179px;
         box-shadow: 0px 8px 32px $color-dark;
-        border-radius: 8px;
+        // border-radius: 8px;
         padding: 25px 0 0 25px;
-        margin-bottom: 30px;
+        // margin-bottom: 30px;
         background: $color-white;
 
         animation: slideInLeft;
         animation-duration: 2s;
+
+        @include resolution(enormous) {
+            width: 1000px;
+            height: 300px;
+            margin-bottom: 85px;
+            border-radius: 20px;
+        }
+
+        @include resolution(very-big-desktop) {
+            width: 800px;
+            height: 250px;
+            margin-bottom: 85px;
+            border-radius: 15px;
+        }
+    
+        @include resolution(big-desktop) {
+            width: 455px;
+            height: 179px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
     
         &:nth-child(2) {
-            margin-left: 40px;
+            // margin-left: 40px;
+
+            @include resolution(enormous) {
+                margin-left: 200px;
+            }
+
+            @include resolution(very-big-desktop) {
+                margin-left: 100px;
+            }
+        
+            @include resolution(big-desktop) {
+                margin-left: 40px;
+            }
 
             @include resolution(pretty-big-desktop) {
                 margin-left: 0;
@@ -68,17 +116,69 @@
     }
 
     &__icon {
-        margin-right: 23px;
+        // margin-right: 23px;
+
+        @include resolution(enormous) {
+            margin-right: 100px;
+
+            img {
+                width: 80px;
+            }
+        }
+
+        @include resolution(very-big-desktop) {
+            margin-right: 50px;
+            
+            img {
+                width: 70px;
+            }
+        }
+    
+        @include resolution(big-desktop) {
+            margin-right: 23px;
+
+            img {
+                width: 50px;
+            }
+        }
     }
 
     &__text{
-        padding-top: 13px;
+        // padding-top: 13px;
+
+        @include resolution(enormous) {
+            padding-top: 20px;
+        }
+
+        @include resolution(very-big-desktop) {
+            padding-top: 20px;
+        }
+    
+        @include resolution(big-desktop) {
+            padding-top: 13px;
+
+        }
     }
 
     &__title {
         @include font(bold-25);
         color: $color-firefly;
-        margin-bottom: 25px;
+        // margin-bottom: 25px;
+
+        @include resolution(enormous) {
+            font-size: 50px;
+            margin-bottom: 50px;
+        }
+
+        @include resolution(very-big-desktop) {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+    
+        @include resolution(big-desktop) {
+            font-size: 25px;
+            margin-bottom: 25px;
+        }
 
         @media (max-width: 600px) {
             margin-bottom: 10px;
@@ -88,7 +188,24 @@
     &__subtitle {
         @include font(regular-16);
         color: $color-blue-bayoux;
-        width: 326px;
+        // width: 326px;
+
+        @include resolution(enormous) {
+            font-size: 30px;
+            width: 600px;
+            line-height: 50px;
+        }
+
+        @include resolution(very-big-desktop) {
+            font-size: 20px;
+            width: 500px;
+            line-height: 30px;
+        }
+    
+        @include resolution(big-desktop) {
+            @include font(regular-16);
+            width: 326px;
+        }
 
         @media (max-width: 600px) {
             width: 250px;
@@ -97,8 +214,26 @@
 
     &__image {
         position: absolute;
-        right: 170px;
-        top: -100px;
+        // right: 170px;
+        // top: -100px;
+
+        @include resolution(enormous) {
+            right: 170px;
+            top: -160px;
+            width: 1100px;
+        }
+
+        @include resolution(very-big-desktop) {
+            right: 170px;
+            top: -150px;
+            width: 900px;
+        }
+    
+        @include resolution(big-desktop) {
+            right: 170px;
+            top: -100px;
+            width: 595px;
+        }
 
         @include resolution(pretty-big-desktop) {
             left: 280px;

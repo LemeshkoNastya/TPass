@@ -1,6 +1,6 @@
 @mixin resolution($breakpoint) {
     @if $breakpoint == enormous {
-        @media (min-width: 3001px) {
+        @media only screen and (min-width: 3001px) {
           @content;
         }
     }

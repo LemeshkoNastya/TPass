@@ -2,8 +2,20 @@
     display: flex;
     position: relative;
     width: 100%;
-    padding: 50px 150px 170px;
+    // padding: 50px 150px 170px;
     height: 820px;
+
+    @include resolution(enormous) {
+        padding: 200px 170px 200px;
+    }
+
+    @include resolution(very-big-desktop) {
+        padding: 200px 170px 200px;
+    }
+
+    @include resolution(big-desktop) {
+        padding: 50px 150px 170px;
+    }
 
     @include resolution(small-desktop) {
         height: 1200px;
@@ -17,10 +29,25 @@
         display: flex;
         margin-top: 50px;
         justify-content: space-between;
-        width: 1140px;
-        height: 540px;
+        // width: 1140px;
+        // height: 540px;
         background: $color-porcelain-2;
         border-radius: 50px;
+
+        @include resolution(enormous) {
+            width: 100%;
+            height: 1000px;
+        }
+
+        @include resolution(very-big-desktop) {
+            width: 100%;
+            height: 800px;
+        }
+    
+        @include resolution(big-desktop) {
+            width: 1140px;
+            height: 540px;
+        }
 
         @include resolution(small-desktop) {
             flex-direction: column;
@@ -32,17 +59,36 @@
             width: 468px;
             margin-left: 15%;
         }
+
+        @include resolution(big-mobile ) {
+            margin-left: 6px;
+        }
     }
 
     &__info {
-        margin-top: 117.03px;
+        // margin-top: 117.03px;
         margin-right: 14.15%;
         display: flex;
         flex-direction: column;
-        width: 419px;
+        // width: 419px;
 
         animation: fadeInBottomRight;
         animation-duration: 2s;
+
+        @include resolution(enormous) {
+            width: 800px;
+            margin-top: 200px;
+        }
+
+        @include resolution(very-big-desktop) {
+            width: 600px;
+            margin-top: 150px;
+        }
+    
+        @include resolution(big-desktop) {
+            margin-top: 117.03px;
+            width: 419px;
+        }
 
         @include resolution(pretty-big-desktop) {
             margin-right: 5%;
@@ -65,25 +111,90 @@
             @include font(regular-18);
             color: $color-blue-bayoux;
             margin-bottom: 22px;
+
+            @include resolution(enormous) {
+                font-size: 30px;
+                margin-bottom: 50px;
+            }
+
+            @include resolution(very-big-desktop) {
+                font-size: 30px;
+                margin-bottom: 50px;
+            }
+        
+            @include resolution(big-desktop) {
+                font-size: 18px;
+                margin-bottom: 22px;
+            }
         }
     
         span:nth-child(2), span:nth-child(3) {
             @include font(black-40);
             color: $color-firefly;
+
+            @include resolution(enormous) {
+                font-size: 60px;
+            }
+
+            @include resolution(very-big-desktop) {
+                font-size: 60px;
+            }
+        
+            @include resolution(big-desktop) {
+                font-size: 40px;
+            }
         }
     
         span:nth-child(4) {
             @include font(regular-16);
             color: $color-blue-bayoux;
             margin-top: 21px;
+
+            @include resolution(enormous) {
+                font-size: 40px;
+                line-height: 50px;
+                margin-top: 50px;
+                margin-bottom: 100px;
+            }
+
+            @include resolution(very-big-desktop) {
+                font-size: 30px;
+                line-height: 40px;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+        
+            @include resolution(big-desktop) {
+                @include font(regular-16);
+                margin-top: 21px;
+                margin-bottom: 0;
+            }
         }
     }
 }
 
 .drink1 {
-    width: 187px;
-    height: 361px;
-    margin: 115px 0 0 30px;
+    // width: 187px;
+    // height: 361px;
+    // margin: 115px 0 0 30px;
+
+    @include resolution(enormous) {
+        width: 300px;
+        height: 500px;
+        margin: 300px 0 0 320px;
+    }
+
+    @include resolution(very-big-desktop) {
+        width: 200px;
+        height: 350px;
+        margin: 300px 0 0 200px;
+    }
+
+    @include resolution(big-desktop) {
+        width: 187px;
+        height: 361px;
+        margin: 115px 0 0 30px;
+    }
 
     @include resolution(desktop) {
         width: 150px;
@@ -104,10 +215,31 @@
 
 .mobile1 {
     position: absolute;
-    top: 50px;
-    left: 305px;
-    width: 321px;
-    height: 640px;
+    // top: 50px;
+    // left: 305px;
+    // width: 321px;
+    // height: 640px;
+
+    @include resolution(enormous) {
+        top: 150px;
+        left: 700px;
+        width: 600px;
+        height: 1200px;
+    }
+
+    @include resolution(very-big-desktop) {
+        top: 150px;
+        left: 500px;
+        width: 520px;
+        height: 1000px;
+    }
+
+    @include resolution(big-desktop) {
+        top: 50px;
+        left: 305px;
+        width: 321px;
+        height: 640px;
+    }
 
     @include resolution(desktop) {
         top: 95px;
@@ -134,10 +266,31 @@
 
 .crisps {
     position: absolute;
-    top: 579px;
-    left: 539px;
-    width: 223px;
-    height: 117px;
+    // top: 579px;
+    // left: 539px;
+    // width: 223px;
+    // height: 117px;
+
+    @include resolution(enormous) {
+        top: 1150px;
+        left: 1200px;
+        width: 400px;
+        height: 230px;
+    }
+
+    @include resolution(very-big-desktop) {
+        top: 1020px;
+        left: 950px;
+        width: 300px;
+        height: 150px;
+    }
+
+    @include resolution(big-desktop) {
+        top: 579px;
+        left: 539px;
+        width: 223px;
+        height: 117px;
+    }
 
     @include resolution(desktop) {
         top: 565px;
@@ -170,6 +323,11 @@
     width: 109px;
     height: 10px;
     margin-top: 50px;
+
+    @include resolution(enormous) {
+        width: 200px;
+        height: 20px;
+    }
 }
 
 .circle {
@@ -177,6 +335,10 @@
     background: $color-porcelain-3;
     border-radius: 10px;
     cursor: pointer;
+
+    @include resolution(enormous) {
+        width: 20px;
+    }
 }
 
 .oval {
@@ -184,4 +346,8 @@
     background: $color-robins-egg-blue;
     border-radius: 10px;
     cursor: pointer;
+
+    @include resolution(enormous) {
+        width: 80px;
+    }
 }
