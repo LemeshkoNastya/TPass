@@ -6,3 +6,4 @@ import WOW from'wow.js';
 new WOW().init();
 
 import './components/burger';
+import './components/loader';
