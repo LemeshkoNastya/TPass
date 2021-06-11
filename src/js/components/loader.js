@@ -3,6 +3,6 @@ const mask = document.querySelector('.mask');
 window.addEventListener('load', () => {
     mask.classList.add('hide');
     setTimeout(() => {
-        mask.remove;
+        mask.remove();
     }, 600)
 })

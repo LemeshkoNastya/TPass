@@ -28,6 +28,10 @@
         @include resolution(small-desktop) {
             width: 300px;
         }
+
+        @include resolution(big-mobile) {
+            width: 0;
+        }
     }
 }
 

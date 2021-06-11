@@ -22,6 +22,10 @@
         margin-bottom: 450px;
     }
 
+    @include resolution(big-mobile) {
+        padding: 0;
+    }
+
     &__item {
         display: flex;
         flex-direction: column;

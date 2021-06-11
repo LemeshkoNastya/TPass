@@ -65,6 +65,11 @@
             font-size: 40px;
             width: 430px;
         }
+
+        @include resolution(big-mobile) {
+            font-size: 30px;
+            width: 285px;
+        }
     }
 
     &__input {
@@ -91,6 +96,16 @@
 
         @include resolution(tablet) {
             width: 450px;
+        }
+
+        @include resolution(big-mobile) {
+            width: 380px;
+        }
+
+        @media (max-width: 400px) {
+            flex-direction: column;
+            height: 1%;
+            width: 260px;
         }
     }
 
@@ -122,6 +137,10 @@
         @include resolution(tablet) {
             width: 330px;
             padding: 17px 20px 16px 20px;
+        }
+
+        @include resolution(big-mobile) {
+            width: 260px;
         }
     }
 
@@ -156,6 +175,11 @@
             width: 110px;
         }
 
+        @media (max-width: 400px) {
+            width: 150px;
+            margin-top: 20px;
+        }
+
         &:hover {
             background: $color-firefly;
             border: 1px solid $color-firefly;
@@ -180,6 +204,10 @@
         @include resolution(big-desktop) {
             margin-left: -150px;
         }
+
+        @media (max-width: 400px) {
+                flex-direction: column;
+        }
     
         img {
 
@@ -200,10 +228,18 @@
                 height: 60px;
                 margin-right: 24px;
             }
+
+            @include resolution(big-mobile) {
+                width: 150px;
+            }
         }
         
         @include resolution(tablet) {
             margin-left: -30px;
+        }
+
+        @media (max-width:400px) {
+            margin-left: 35px;
         }
     }
 }
